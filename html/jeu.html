@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<!--définition du codage des caractères-->
+	<meta http-equiv="Content-type" content="text/html" charset="UTF-8"/>
+	<!--donne le nom de l'onglet-->
+	<title>Qui est-ce ? | En jeu</title>
+	<!--permet d'accéder au fichier CSS-->
+	<link rel="stylesheet" href="../css/stylejeu.css"/>
+	<script type="text/javascript" src="../javascript/javascriptjeu.js"></script>
+	</head>
+	<body>
+		<div id="barresuperieure">
+			<input type="button" id="boutonretour" value="Retour au menu"/>
+			<div id="separation"></div>
+			<FORM>
+				<SELECT name="question" size="1" id="listetype">
+					<option>Couleur de peau
+					<option>Sexe
+					<option>Cheveux
+					<option>Couleur des yeux
+					<option>Lunettes
+				</SELECT>
+			</FORM>
+			<input type="button" id="choisirtypequestion" value="Choisir"/>
+			<div id="separation"></div>
+			<FORM>
+				<SELECT name="question" size="1" id="listequestions">
+					<option id="default">Choisir un type de question
+					<option id="peaublanc" class="peau">Le personnage mystère a la peau blanche.
+					<option id="peaunoir" class="peau">Le personnage mystère a la peau noire.
+					<option id="sexehomme" class="sexe">Le personnage mystère est un homme.
+					<option id="sexefemme" class="sexe">Le personnage mystère est une femme.
+					<option id="cheveuxbrun" class="cheveux">Le personnage a des cheveux bruns.
+					<option id="cheveuxchatain" class="cheveux">Le personnage a des cheveux chatains.
+					<option id="cheveuxroux" class="cheveux">Le personnage a des cheveux roux.
+					<option id="cheveuxblond" class="cheveux">Le personnage a des cheveux blonds.
+					<option id="cheveuxnoir" class="cheveux">Le personnage a des cheveux noirs.
+					<option id="cheveuxgris" class="cheveux">Le personnage a des cheveux gris.
+					<option id="yeuxbleufonce" class="yeux">Le personnage a des yeux bleu foncé.
+					<option id="yeuxbleuclair" class="yeux">Le personnage a des yeux bleu clair.
+					<option id="yeuxmarron" class="yeux">Le personnage a des yeux marrons.
+					<option id="yeuxvert" class="yeux">Le personnage a des yeux verts.
+					<option id="yeuxjaune" class="yeux">Le personnage a des yeux jaunes.
+					<option id="lunettesoui" class="lunettes">Le personnage porte des lunettes.
+					<option id="lunettesnon" class="lunettes">Le personnage ne porte pas de lunettes.
+				</SELECT>
+			</FORM>
+			<input type="button" id="boutoninterro" value="Demander"/>
+			<input type="text" value=" " id="reponsequestion" readonly="true"/>
+			<div id="separation"></div>
+			<p>Personnage mystère :</p>
+			<input type="text" id="reponseperso"/>
+			<input type="button" value="Envoyer" id="boutonenvoyer"/>
+		</div>
+		<div id="barreinferieure">
+			<div id="nombrepartie">Partie n°1</div><div id="essais">Nombre d'essais restant : 3</div><div id="nomjoueur">Nom du joueur : Test Test</div><div id="separation"></div><input type="button" id="boutonmodeeliminer" value="Elimination"/>
+		</div>
+		<div id="zoneicones">
+			<div id="ligne1">
+				<button id="perso1" class="perso">
+					<img src="../donnees/1.png"/><h3>Sophie</h3>
+				</button>
+				<button id="perso2" class="perso" >
+					<img src="../donnees/2.png"/><h3>Emma</h3>
+				</button>
+				<button id="perso3" class="perso" >
+					<img src="../donnees/3.png"/><h3>Thomas</h3>
+				</button>
+				<button id="perso4" class="perso" >
+					<img src="../donnees/4.png"/><h3>Lucas</h3>
+				</button>
+				<button id="perso5" class="perso" >
+					<img src="../donnees/5.png"/><h3>Jules</h3>
+				</button>
+				<button id="perso6" class="perso" >
+					<img src="../donnees/6.png"/><h3>Jeanne</h3>
+				</button>
+				<button id="perso7" class="perso" >
+					<img src="../donnees/7.png"/><h3>Charlotte</h3>
+				</button>
+			</div>
+			<div id="ligne2">
+				<button id="perso8" class="perso" >
+					<img src="../donnees/8.png"/><h3>Maxime</h3>
+				</button>
+				<button id="perso9" class="perso" >
+					<img src="../donnees/9.png"/><h3>Tom</h3>
+				</button>
+				<button id="perso10" class="perso" >
+					<img src="../donnees/10.png"/><h3>Samuel</h3>
+				</button>
+				<button id="perso11" class="perso" >
+					<img src="../donnees/11.png"/><h3>Agathe</h3>
+				</button>
+				<button id="perso12" class="perso" >
+					<img src="../donnees/12.png"/><h3>Camille</h3>
+				</button>
+				<button id="perso13" class="perso" >
+					<img src="../donnees/13.png"/><h3>Louis</h3>`
+				</button>
+				<button id="perso14" class="perso" >
+					<img src="../donnees/14.png"/><h3>Candice</h3>
+				</button>
+			</div>
+			<div id="ligne3">
+				<button id="perso15" class="perso" >
+					<img src="../donnees/15.png"/><h3>Nathan</h3>
+				</button>
+				<button id="perso16" class="perso" >
+					<img src="../donnees/16.png"/><h3>Alice</h3>
+				</button>
+				<button id="perso17" class="perso" >
+					<img src="../donnees/17.png"/><h3>Antoine</h3>
+				</button>
+				<button id="perso18" class="perso" >
+					<img src="../donnees/18.png"/><h3>Hugo</h3>
+				</button>
+				<button id="perso19" class="perso" >
+					<img src="../donnees/19.png"/><h3>Ethan</h3>
+				</button>
+				<button id="perso20" class="perso" >
+					<img src="../donnees/20.png"/><h3>Paul</h3>
+				</button>
+				<button id="perso21" class="perso" >
+					<img src="../donnees/21.png"/><h3>Clémence</h3>
+				</button>
+			</div>
+		</div>
+	</body>
+</html>

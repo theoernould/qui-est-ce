@@ -1,0 +1,138 @@
+@font-face {
+	font-family: "Prenoms";
+	src: url("Typo_Round_Bold_Demo.otf") format('truetype');
+}
+
+#listequestions {
+	width : 20vw;
+}
+
+body {
+	margin : 0;
+	background-image : url(../donnees/fondaccueil.png);
+	background-size : cover;
+}
+
+.perso {
+	opacity : 0;
+}
+
+#listequestions option:not(default) {
+	display : none;
+}
+
+p {
+	margin-top : 0.75vh;
+}
+
+#reponsequestion {
+	text-align : center;
+}
+
+#supprimerperso {
+	background-color : red;
+}
+
+button:hover {
+	background-color : red;
+}
+
+#barresuperieure {
+	width : 90vw;
+	background-color : white;
+	margin-top : 1vh;
+	margin-left : 5vw;
+	margin-right : 10vw;
+	display : flex;
+	justify-content : space-around;
+	flex-direction : row;
+	padding : 1vw;
+	border : 2px solid black;
+	border-radius : 5px;
+}
+
+#barreinferieure {
+	background-color : white;
+	margin-top : -0.12vh;
+	margin-left : 22.5vw;
+	margin-right : 32.5vw;
+	display : flex;
+	width : 60vw;
+	justify-content : space-around;
+	flex-direction : row;
+	padding : 0.5vh;
+	border : 2px solid black;
+	border-radius : 5px;
+}
+
+#barreinferieure div{
+	margin-top : 0.5vh;
+}
+
+#barresuperieure input,SELECT,div {
+	height : 3vh;
+}
+
+#barresuperieure #separation {
+	margin-top : -2.25vh;
+	height : 6.7vh;
+	background-color: black;
+	width : 0.15vw;
+}
+
+#barreinferieure #separation {
+	margin-top : -0.50vh;
+	height : 4.25vh;
+	background-color: black;
+	width : 0.15vw;
+}
+
+#zoneicones {
+	width : 95vw;
+	margin-left : 2.25vw;
+	height : 85vh;
+	margin-top : -0.5vh;
+	display : flex;
+	flex-direction : column;
+}
+
+#ligne1 {
+	margin-top: 3.5vh;
+}
+
+#ligne1,#ligne2,#ligne3 {
+	display : flex;
+	flex-direction : row;
+}
+
+#ligne2, #ligne3 {
+	margin-top : 24vh;
+}
+
+#ligne1 button, #ligne2 button, #ligne3 button {
+	text-align : center;
+	margin-left : 1.25vw;
+	height : 24vh;
+	width : 12vw;
+	border : 1px solid black;
+	border-radius : 2px;
+	box-shadow : 1px 2px 3px;
+	background-color : white;
+	font-family : "prenoms";
+}
+
+#ligne1 button img, #ligne2 button img, #ligne3 button img{
+	margin-top : 1vh;
+	width : 11vw;
+	height : 16vh;
+}
+
+#ligne1 button:hover, #ligne2 button:hover, #ligne3 button:hover {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+	transition : 1s;
+}
+
+input, form {
+	border-radius : 3px;
+}

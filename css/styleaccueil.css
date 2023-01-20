@@ -1,0 +1,90 @@
+@font-face {
+	font-family: "Azonix";
+	src: url("Azonix.otf") format('truetype');
+}
+
+@font-face {
+	font-family: "policeboutons";
+	src: url("PoetsenOne-Regular.ttf") format('truetype');
+}
+
+#image {
+	margin-top : 25vh;
+	margin-left : 25vw;
+}
+
+body {
+	margin : 0;
+	background-image : url(../donnees/fondaccueil.png);
+	background-size : cover;
+	height: auto;
+}
+
+#titre {
+	margin: 0 auto;
+	background-color : white;
+	margin-top : 5vh;
+	font-size : 45px;
+	border : 2px solid grey;
+	border-radius : 10px;
+	padding : 10px;
+	width : 40vw;
+	text-align : center;
+	font-family : "Azonix";
+}
+
+#boutons {
+	margin-top : 17.5vh;
+	width : 10vw;
+	margin-left : 50vw;
+	transform : translatex(-50%);
+	display : flex;
+	flex-direction : column;
+}
+
+#boutonjouer{
+	width : 10vw;
+	height : 10vh;
+	font-size : 25px;
+	padding : 10px;
+	border-radius : 7.5px;
+	font-family : "policeboutons";
+}
+
+#boutonconfirmerpseudo {
+	margin-top : 3vh;
+	margin-left: -4.25vw;
+	width : 20vw;
+	height : 10vh;
+	font-size : 25px;
+	padding : 10px;
+	border-radius : 7.5px;
+	font-family : "policeboutons";
+}
+
+#rentrerpseudo {
+	text-align: center;
+	margin-top : 5vh;
+	margin-left : -8vw;
+	width : 25vw;
+	height : 10vh;
+	font-size : 25px;
+	padding : 10px;
+	border-radius : 7.5px;
+	font-family : "policeboutons";
+}
+
+h3 {
+	margin-left : -20vw;
+	width : 50vw;
+	height : 10vh;
+	font-size : 25px;
+	padding : 10px;
+	border-radius : 7.5px;
+	color : white;
+	font-family : "policeboutons";
+}
+
+#boutonregles {
+	margin-top : 5vh;
+}
